@@ -1,6 +1,18 @@
 _____________________
 ********************* SETUP VMNETS
 
+@Remove NAT
+config t
+int g1
+	no ip nat inside
+	no ip nat outside
+int g2
+	no ip nat inside
+	no ip nat outside
+int g3
+	no ip nat inside
+	no ip nat outside
+end
 
 VMWare > Edit > Virtual Network Editor
 
